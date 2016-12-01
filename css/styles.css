@@ -1,6 +1,12 @@
 #home {
-  background-color: #f6f0b9;
+  background-color: #000040;
   height: 100vh;
+}
+#contact {
+  background-color: #000040;
+}
+html {
+  background-color: #000040;
 }
 
 /*NAVBAR*/
@@ -33,6 +39,7 @@
   margin-right: -15px;
   margin-bottom: 0;
   height: calc(100% - 80px);
+  border-radius: 0;
 }
 /*END JUMBOTRON*/
 
@@ -51,7 +58,7 @@
   margin: 15px;
   display: inline-block;
   width: calc(100% - 30px);
-  color: #b8860b;
+  color: #b8860b; /*DARK GOLD*/
 }
 #promo-video {
   height: calc(88% - 60px);
@@ -60,6 +67,27 @@
   padding-right: calc(10% - 15px);
 }
 /*END PROMO VIDEO*/
+
+/*CONTACT INFO*/
+#contact-info {
+  margin-left: 25%;
+  margin-top: 5%;
+}
+#contact-info h1 {
+  color: #b8860b;
+  font-size: 5em;
+  margin-bottom: 100px;
+}
+#contact-list {
+  list-style-type: none;
+  color: #fff;
+  font-size: 2em;
+  /*padding-top: 20px;*/
+}
+#contact-list li {
+  padding-top: 20px;
+}
+/*END CONTACT INFO*/
 
 @media (min-width: 768px) {
   /*NAVBAR*/
@@ -82,6 +110,10 @@
 
 @media (max-width: 767px) {
   #home {
+    margin: 0;
+    padding: 0;
+  }
+  #contact {
     margin: 0;
     padding: 0;
   }
@@ -138,4 +170,24 @@
     width: calc(100% + 30px);
   }
   /*END PROMO VIDEO*/
+
+  /*CONTACT INFO*/
+  #contact-info {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  #contact-info h1 {
+    padding-left: 5%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  #contact-list {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20%;
+    padding-left: 5%;
+    list-style-type: none;
+    font-size: 1.5em;
+  }
+  /*END CONTACT INFO*/
 }
