@@ -1,0 +1,141 @@
+#home {
+  background-color: #f6f0b9;
+  height: 100vh;
+}
+
+/*NAVBAR*/
+.navbar {
+  background-color: #6a8fab;
+  border: none;
+  margin-bottom: 0;
+}
+.navbar-default .navbar-brand {
+  color: #000;
+  font-size: 3em;
+  height: auto;
+  line-height: normal;
+}
+.navbar-default .navbar-brand:hover {
+  color: #000;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #000;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: #000;
+  background-color: #5b83a1;
+}
+/*END NAVBAR*/
+
+/*BIG JUMBOTRON*/
+#main-jumbo {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 0;
+  height: calc(100% - 80px);
+}
+/*END JUMBOTRON*/
+
+/*PROMO VIDEO*/
+#promo-border {
+  background-color: #000040;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100%;
+}
+.promo-title {
+  text-align: center;
+  line-height: 60px;
+  margin: 15px;
+  display: inline-block;
+  width: calc(100% - 30px);
+  color: #b8860b;
+}
+#promo-video {
+  height: calc(88% - 60px);
+  width: 100%;
+  padding-left: calc(10% - 15px);
+  padding-right: calc(10% - 15px);
+}
+/*END PROMO VIDEO*/
+
+@media (min-width: 768px) {
+  /*NAVBAR*/
+  .navbar {
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 0;
+  }
+  ul.navbar-nav {
+    /*margin-top: 28px;*/
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  #inner-header {
+  }
+  /*END NAVBAR*/
+}
+
+/* BIG^  vTINY */
+
+@media (max-width: 767px) {
+  #home {
+    margin: 0;
+    padding: 0;
+  }
+
+  /*NAVBAR*/
+  div.container.header {
+    padding: 0;
+  }
+  #inner-header {
+    /*margin: 0;*/
+    padding: 0;
+  }
+  .navbar {
+    border-radius: 0;
+  }
+  button.navbar-toggle {
+    position: absolute;
+    right: 0;
+  }
+  .navbar-collapse {
+    border: none;
+    -webkit-box-shadow: inset 0 0px 0 rgba(255,255,255,0);
+  }
+  /*END NAVBAR*/
+
+  /*BIG JUMBOTRON*/
+  #main-jumbo {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .jumbotron .container {
+    margin-right: -15px;
+  }
+  /*END JUMBOTRON*/
+
+  /*PROMO VIDEO*/
+  #promo-border {
+    background-color: #000040;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100%;
+  }
+  #promo-video {
+    height: calc(88% - 60px);
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    text-align: center;
+    width: calc(100% + 30px);
+  }
+  /*END PROMO VIDEO*/
+}
