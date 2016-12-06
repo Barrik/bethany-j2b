@@ -1,6 +1,5 @@
 #home {
   background-color: #000028;
-  height: 100vh;
 }
 #contact {
   background-color: #000028;
@@ -8,8 +7,12 @@
 #audio {
   background-color: #000028;
   color: #fff;
+  height: 100%;
 }
 html {
+  background-color: #000028;
+}
+body {
   background-color: #000028;
 }
 
@@ -74,7 +77,7 @@ html {
   margin-right: -15px;
   padding-left: 15px;
   padding-right: 15px;
-  height: 100%;
+  height: 80vh;
 }
 .promo-title {
   text-align: center;
@@ -85,10 +88,11 @@ html {
   color: #906333; /*DARK GOLD*/
 }
 #promo-video {
-  height: 80%;
+  height: 100%;
   width: 100%;
   padding-left: calc(10% - 15px);
   padding-right: calc(10% - 15px);
+  padding-bottom: 100px;
 }
 /*END PROMO VIDEO*/
 
@@ -159,6 +163,59 @@ html {
   padding-top: 20px;
 }
 /*END CONTACT INFO*/
+
+
+/*BEGIN FOOTER*/
+footer {
+  background-color: #000014;
+  color: #BFC0C1;
+  margin-top: 150px;
+  padding: 25px 200px;
+}
+.sticky-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.copyright {
+  text-align: center;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+.social {
+  text-align: center;
+}
+.media {
+     background-color:rgb(46,66,209);
+     border:4px solid #FFF;
+     border-radius:100%;
+     font-size:34px !important;
+     margin:15px;
+     padding:10px;
+     color:#FFF;
+     height: 62px;
+     width: 62px;
+     transition:background 0.2s linear 0s;
+}
+
+.media:hover {
+     background-color:#d1bb2e;
+}
+
+.fa-facebook {background-color:#0c516e;}
+.fa-twitter {background-color:#8ca6d9;}
+
+.fa-envelope::before {
+  margin-left: 1px;
+}
+.fa-twitter::before {
+  margin-left: 2px;
+}
+/*END FOOTER*/
+
+/*BEGIN SCALING*/
 
 @media (min-width: 768px) {
   /*NAVBAR*/
@@ -239,10 +296,10 @@ html {
     margin-right: 0;
     padding-left: 15px;
     padding-right: 15px;
-    height: 100%;
+    height: 80vh;
   }
   #promo-video {
-    height: calc(88% - 60px);
+    height: 100%;
     padding-left: 0;
     padding-right: 0;
     margin-left: -15px;
@@ -316,4 +373,24 @@ html {
     font-size: 1.5em;
   }
   /*END CONTACT INFO*/
+
+  /*BEGIN FOOTER*/
+  footer {
+    background-color: #000014;
+    color: #BFC0C1;
+    margin-top: 50px;
+    padding: inherit;
+  }
+  .sticky-footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+  }
+  .social {
+    padding-top: 10px;
+  }
+  .fa-envelope::before {
+    margin-left: 0;
+  }
+  /*END FOOTER*/
 }
