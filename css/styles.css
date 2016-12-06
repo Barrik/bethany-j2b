@@ -5,31 +5,45 @@
 #contact {
   background-color: #000028;
 }
+#audio {
+  background-color: #000028;
+  color: #fff;
+}
 html {
   background-color: #000028;
 }
 
 /*NAVBAR*/
 .navbar {
-  background-color: #6a8fab;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
   border: none;
   margin-bottom: 0;
 }
 .navbar-default .navbar-brand {
-  color: #000;
-  font-size: 3em;
   height: auto;
-  line-height: normal;
+  padding-bottom: 5px;
 }
 .navbar-default .navbar-brand:hover {
   color: #000;
 }
+.navbar-default .navbar-brand img {
+  height: 100px;
+}
+.navbar-default .nav {
+  margin-top: 70px;
+}
 .navbar-default .navbar-nav>li>a {
-  color: #000;
+  color: #fff;
+  text-shadow: 5px 5px 20px #000;
 }
 .navbar-default .navbar-nav>li>a:hover {
-  color: #000;
+  color: #fff;
   background-color: #5b83a1;
+}
+#header-filler {
+  height: 120px;
 }
 /*END NAVBAR*/
 
@@ -55,6 +69,7 @@ html {
 /*PROMO VIDEO*/
 #promo-border {
   background-color: #000028;
+  margin-top: 50px;
   margin-left: -15px;
   margin-right: -15px;
   padding-left: 15px;
@@ -70,12 +85,59 @@ html {
   color: #906333; /*DARK GOLD*/
 }
 #promo-video {
-  height: calc(88% - 60px);
+  height: 80%;
   width: 100%;
   padding-left: calc(10% - 15px);
   padding-right: calc(10% - 15px);
 }
 /*END PROMO VIDEO*/
+
+/*IMAGE SELECTOR*/
+#image-display {
+  /*width: 100%;*/
+  margin-left: -32px;
+  margin-right: -32px;
+  border: 2px solid #000;
+}
+#image {
+  width: 100%;
+}
+#image-selection {
+  border: 2px solid #000;
+  margin-left: -32px;
+  margin-right: -32px;
+  margin-bottom: 100px;
+  font-size: 0px;
+}
+.image {
+  height: auto;
+  display: inline;
+}
+.image-links {
+  border: 2px solid #000;
+  display: inline;
+  max-width: 25%;
+  cursor: pointer;
+}
+/*END IMAGE SELECTOR*/
+
+/*AUDIO PAGE*/
+#audio h1 {
+  color: #906333;
+  font-size: 5em;
+}
+#audio p {
+  font-size: 1.5em;
+  text-align: justify;
+}
+.downloads {
+  margin-top: 50px;
+  font-size: 3em;
+}
+.downloads a:hover {
+  text-decoration: none;
+}
+/*END AUDIO PAGE*/
 
 /*CONTACT INFO*/
 #contact-info {
@@ -129,6 +191,10 @@ html {
     margin: 0;
     padding: 0;
   }
+  #audio {
+    margin: 0;
+    padding: 0;
+  }
   #contact {
     margin: 0;
     padding: 0;
@@ -157,17 +223,18 @@ html {
 
   /*BIG JUMBOTRON*/
   #main-jumbo {
-    padding-left: 0;
-    padding-right: 0;
+    visibility: hidden;
+    height: 20px;
+    /*padding-left: 0;
+    padding-right: 0;*/
   }
-  .jumbotron .container {
-    margin-right: -15px;
+  .jumbo {
+    box-shadow: none;
   }
   /*END JUMBOTRON*/
 
   /*PROMO VIDEO*/
   #promo-border {
-    background-color: #000040;
     margin-left: 0;
     margin-right: 0;
     padding-left: 15px;
@@ -184,6 +251,51 @@ html {
     width: calc(100% + 30px);
   }
   /*END PROMO VIDEO*/
+
+  /*IMAGE SELECTOR*/
+  #image-display {
+    /*width: 100%;*/
+    margin-left: -15px;
+    margin-right: -15px;
+    border: 2px solid #000;
+  }
+  #image {
+    width: 100%;
+  }
+  #image-selection {
+    border: 2px solid #000;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 100px;
+    font-size: 0px;
+  }
+  .image {
+    height: auto;
+    display: inline;
+  }
+  .image-links {
+    border: 2px solid #000;
+    display: inline;
+    max-width: 25%;
+    cursor: pointer;
+  }
+  /*END IMAGE SELECTOR*/
+
+  /*AUDIO PAGE*/
+  #audio h1 {
+    color: #906333;
+    font-size: 3em;
+    text-align: center;
+  }
+  #audio p {
+    font-size: 1.3em;
+    text-align: justify;
+  }
+  .downloads {
+    margin-top: 50px;
+    font-size: 3em;
+  }
+  /*END AUDIO PAGE*/
 
   /*CONTACT INFO*/
   #contact-info {
