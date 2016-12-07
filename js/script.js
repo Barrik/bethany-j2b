@@ -26,16 +26,16 @@ for (var i = 0; i < image.length; i++) {
 
 // STICKY FOOTER
 
-console.log("window height: " + $(window).height());
+// console.log("window height: " + $(window).height());
 // console.log("document height: " + $(document).height());
-console.log("body height: " + $(document.body).height());
+// console.log("body height: " + $(document.body).height());
 
 function stickyFooter() {
   if ($(document.body).height() <= $(window).height()) {
-    console.log('The footer needs to be stickied');
+    // console.log('The footer needs to be stickied');
     $(footer).addClass("sticky-footer");
   } else if ($(document.body).height() > $(window).height()) {
-    console.log('The footer does not need to be stickied');
+    // console.log('The footer does not need to be stickied');
     $(footer).removeClass("sticky-footer");
   };
 };
