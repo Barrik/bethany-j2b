@@ -381,11 +381,6 @@ footer {
     margin-top: 50px;
     padding: inherit;
   }
-  .sticky-footer {
-    position: static;
-    bottom: 0;
-    width: 100%;
-  }
   .social {
     padding-top: 10px;
   }
