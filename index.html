@@ -8,12 +8,13 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="container-fluid" id="home">
     <!-- NAV -->
     <!-- <div class="container header"> -->
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default" id="header">
         <div class="container" id="inner-header">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -24,63 +25,55 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html">Journey to Bethlehem</a>
+              <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Journey to Bethlehem"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <!-- <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul> -->
               <ul class="nav navbar-nav navbar-right">
                 <li class="navbar-item"><a href="index.html">Home</a></li>
-                <li class="navbar-item"><a href="#">Audio</a></li>
+                <li class="navbar-item"><a href="audio.html">Audio</a></li>
                 <li class="navbar-item"><a href="contact.html">Find us</a></li>
-                <!-- <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </li> -->
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </div>
       </nav>
+      <div id="header-filler"></div>
     <!-- </div> -->
     <!-- END NAV -->
-    <div class="jumbotron" id="main-jumbo">
-      <div class="container">
-        <h1>A Drive-Thru Christmas</h1>
-        <p>Join us for a live action, drive-thru tour of the true story of Christmas, complete with live animals!  Complimentary s'mores and hot chocolate available.  <b>Admission is free.</b></p>
+    <div id="main-jumbo">
+      <div class="container jumbo">
+          <img src="./img/web_banner.png" id="banner">
       </div>
     </div>
     <div id="promo-border">
-      <h1 class="promo-title">Promo Video</h1><br>
-      <iframe id="promo-video" src="https://www.youtube.com/embed/ja8pA2B0RR4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      <iframe id="promo-video" src="https://www.youtube.com/embed/NRx9k_6YCRw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
     </div>
-
+    <div class="container">
+      <div id="image-display">
+        <img id="image" src="img/j2b-1.png">
+      </div>
+      <div id="image-selection">
+        <div class="image"><img class="image-links" src="img/j2b-1.png" /></div>
+        <div class="image"><img class="image-links" src="img/j2b-2.png" /></div>
+        <div class="image"><img class="image-links" src="img/j2b-3.png" /></div>
+        <div class="image"><img class="image-links" src="img/j2b-4.png" /></div>
+      </div>
+    </div>
 
   </div>
 
+  <footer id="footer">
+    <!-- <div class="social">
+      <a href="https://twitter.com/Barrik226" title="Check me out on Twitter!" target="_blank"><i class="media fa fa-twitter"></i></a>
+      <a href="mailto:barrik226@gmail.com" title="Email me!" target="_blank"><i class="media fa fa-envelope"></i></a>
+    </div> -->
+    <p class="copyright">Site by | Adam Schwartz, 2016</p>
+  </footer>
+
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
