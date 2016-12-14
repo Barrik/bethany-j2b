@@ -17,12 +17,33 @@ for (var i = 0; i < image.length; i++) {
 // END IMAGE SELECTOR
 
 // HEADER MINIMIZE
-
-// var header = document.getElementById('header');
-//
-// console.log(header);
-
 // END HEADER MINIMIZE
+
+// AUDIO TOGGLE
+
+var audioLink = document.getElementsByClassName("audio-link");
+var audioDisplay = document.getElementsByClassName("audio-player");
+
+// console.log(audioLink);
+// console.log(audioDisplay);
+
+function addToggleAudioDisplay(num) {
+  audioLink[num].addEventListener('click', function() {
+    if (audioDisplay[num].classList.contains("hidden-audio")) {
+      audioDisplay[num].classList.remove("hidden-audio");
+      stickyFooter();
+    } else {
+      audioDisplay[num].classList.add("hidden-audio");
+      stickyFooter();
+    }
+  });
+}
+
+for (var i = 0; i < audioLink.length; i++) {
+  addToggleAudioDisplay(i);
+};
+
+// END AUDIO TOGGLE
 
 // STICKY FOOTER
 
@@ -32,10 +53,8 @@ for (var i = 0; i < image.length; i++) {
 
 function stickyFooter() {
   if ($(document.body).height() <= $(window).height()) {
-    // console.log('The footer needs to be stickied');
     $(footer).addClass("sticky-footer");
   } else if ($(document.body).height() > $(window).height()) {
-    // console.log('The footer does not need to be stickied');
     $(footer).removeClass("sticky-footer");
   };
 };
