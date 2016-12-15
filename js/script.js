@@ -22,7 +22,7 @@ for (var i = 0; i < image.length; i++) {
 // AUDIO TOGGLE
 
 var audioLink = document.getElementsByClassName("audio-link");
-var audioDisplay = document.getElementsByClassName("audio-player");
+var audioDisplay = document.getElementsByClassName("link-bundle");
 
 // console.log(audioLink);
 // console.log(audioDisplay);
