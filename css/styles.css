@@ -22,6 +22,9 @@ body {
   -o-user-select: none;
   user-select: none;
 }
+.padding-top {
+  padding-top: 25px;
+}
 
 /*NAVBAR*/
 .navbar {
