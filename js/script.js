@@ -21,27 +21,27 @@ for (var i = 0; i < image.length; i++) {
 
 // AUDIO TOGGLE
 
-var audioLink = document.getElementsByClassName("audio-link");
-var audioDisplay = document.getElementsByClassName("link-bundle");
-
-// console.log(audioLink);
-// console.log(audioDisplay);
-
-function addToggleAudioDisplay(num) {
-  audioLink[num].addEventListener('click', function() {
-    if (audioDisplay[num].classList.contains("hidden-audio")) {
-      audioDisplay[num].classList.remove("hidden-audio");
-      stickyFooter();
-    } else {
-      audioDisplay[num].classList.add("hidden-audio");
-      stickyFooter();
-    }
-  });
-}
-
-for (var i = 0; i < audioLink.length; i++) {
-  addToggleAudioDisplay(i);
-};
+// var audioLink = document.getElementsByClassName("audio-link");
+// var audioDisplay = document.getElementsByClassName("link-bundle");
+//
+// // console.log(audioLink);
+// // console.log(audioDisplay);
+//
+// function addToggleAudioDisplay(num) {
+//   audioLink[num].addEventListener('click', function() {
+//     if (audioDisplay[num].classList.contains("hidden-audio")) {
+//       audioDisplay[num].classList.remove("hidden-audio");
+//       stickyFooter();
+//     } else {
+//       audioDisplay[num].classList.add("hidden-audio");
+//       stickyFooter();
+//     }
+//   });
+// }
+//
+// for (var i = 0; i < audioLink.length; i++) {
+//   addToggleAudioDisplay(i);
+// };
 
 // END AUDIO TOGGLE
 
