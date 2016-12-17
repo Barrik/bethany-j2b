@@ -27,6 +27,9 @@ body {
 }
 
 /*NAVBAR*/
+#header {
+  z-index: 1;
+}
 .navbar {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
